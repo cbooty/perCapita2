@@ -1,0 +1,49 @@
+{
+    "name": "Per Capita Analysis v2b",
+    "version": "0.0.0.5",
+    "description": "Analyses the figures in a news story and returns per capita results.",
+    "manifest_version": 3,
+    "author": "Craig",
+    "content_scripts":[
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js", "popup.js"]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_title": "Per Capital Analysis",
+        "css": ["style.css"]
+    },
+
+    "web_accessible_resources": [{
+      "resources": ["images/loading.gif"],
+      "matches": ["<all_urls>"],
+     "extension_ids": []
+    }], 
+
+
+    
+    
+    "icons": {
+        "16": "icons/icon-bw-16.png",
+        "32": "icons/icon-bw-32.png",
+        "48": "icons/icon-bw-48.png",
+        "128": "icons/icon-bw-128.png"
+      },
+
+      "options_page": "options.html",
+
+
+      "permissions": [
+        "storage",
+        "background",
+        "tabs"
+
+        
+      ],
+
+      "background": {
+        "service_worker": "scripts/background.js"
+      }
+}
