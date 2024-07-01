@@ -6,3 +6,5 @@ For example when a news article states a new Toronto Subway line will cost $30 b
 To install,
 (1) Download files
 (2) in Google Chrome, choose ... > Extensions > Manage Extensions > Load Upackaged and select directory where files are downloaded
+
+Overview video available here:  https://vimeo.com/973346871?share=copy
